@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UPI wala</string>
+    <string name="amount">Amount</string>
+    <string name="upi_id">UPI ID</string>
+    <string name="dummy_upi">adityashahi206@oksbi</string>
+    <string name="name">Name</string>
+    <string name="name_hint">Aditya</string>
+    <string name="note">Note</string>
+    <string name="send_by_upi">send by upi</string>
+    <string name="pay">Pay</string>
+</resources>

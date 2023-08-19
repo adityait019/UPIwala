@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".UPI">
+
+    <EditText
+        android:id="@+id/amount_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/amount"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/upi_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amount_et"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:focusable="false"
+        android:hint="@string/upi_id"
+        android:minHeight="48dp"
+        android:text="@string/dummy_upi" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upi_id"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:focusable="false"
+        android:hint="@string/name"
+        android:minHeight="48dp"
+        android:text="@string/name_hint"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:focusable="false"
+        android:hint="@string/note"
+        android:minHeight="48dp"
+        android:text="@string/note" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_primary30"
+        android:textColor="#fff"
+        android:id="@+id/send"
+        android:layout_below="@+id/note"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/send_by_upi"/>
+
+</RelativeLayout>
